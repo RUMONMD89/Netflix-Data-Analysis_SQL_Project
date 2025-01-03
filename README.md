@@ -1,2 +1,2 @@
-# Netflix-Data-Analysis_SQL_Project
+# Netflix-Movie and TV shows Data-Analysis
 PostgreSQL 
