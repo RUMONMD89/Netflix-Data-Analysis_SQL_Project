@@ -1,4 +1,4 @@
 # Netflix-Movie and TV shows Data-Analysis
 
-<img src="netflix_titles.csv/netflix.gif">
+<img src="netflix_titles.csv/netflix-logo.jpg">
 
