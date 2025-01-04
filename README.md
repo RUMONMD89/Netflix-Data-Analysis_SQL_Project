@@ -9,10 +9,12 @@ https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
 
 データセット：
 
-https://www.kaggle.com/datasets/shivamb/netflix-shows/data
+https://www.kaggle.com/datasets/shivamb/netflix-shows/dat
 
 Schema
+
 CREATE TABLE Netflix
+
 (
 	show_id	varchar(6),
 	type	varchar(10),
