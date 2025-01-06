@@ -20,7 +20,6 @@ https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
 
 ## Schema
 ```sql
-DROP TABLE IF EXISTS netflix;
 CREATE TABLE Netflix
 (
 	show_id	varchar(12),
