@@ -11,22 +11,10 @@ https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
 
 https://www.kaggle.com/datasets/shivamb/netflix-shows/dat
 
-Schema
+概要：
 
-CREATE TABLE Netflix
+本プロジェクトは、Netflixの映画やテレビ番組データをSQLを活用して分析し、データから有益なインサイトを抽出することを目的としています。また、さまざまなビジネス上の課題に対する答えを導き出すことも目指しています。  
+このREADMEでは、プロジェクトの目的やビジネス課題、解決策、分析結果、そして得られた結論について、分かりやすく解説しています。
 
-(
-	show_id	varchar(6),
-	type	varchar(10),
-	title	varchar(150),
-	director varchar(208),	
-	casts	varchar(1000),
-	country	 varchar(150),
-	date_added	varchar(50),
-	release_year	int,
-	rating	varchar(10),
-	duration varchar(15),
-	listed_in  	varchar(100),
-	description varchar(250)
 
-);
+
