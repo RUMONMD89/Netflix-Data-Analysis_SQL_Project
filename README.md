@@ -9,7 +9,8 @@ https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
 
 データセット：
 
-https://www.kaggle.com/datasets/shivamb/netflix-shows/dat
+- [Dataset Link: Netflix Movie & TV Show Dataset ](https://www.kaggle.com/datasets/shivamb/netflix-shows/dat)
+
 
 概要：
 
@@ -17,4 +18,22 @@ https://www.kaggle.com/datasets/shivamb/netflix-shows/dat
 このREADMEでは、プロジェクトの目的やビジネス課題、解決策、分析結果、そして得られた結論について、分かりやすく解説しています。
 
 
+## Schema
+```sql
+DROP TABLE IF EXISTS netflix;
+CREATE TABLE Netflix
+(
+	show_id	varchar(12),
+	type	varchar(15),
+	title	varchar(150),
+	director varchar(208),	
+	casts	varchar(1000),
+	country	 varchar(150),
+	date_added	varchar(50),
+	release_year	int,
+	rating	varchar(15),
+	duration varchar(15),
+	listed_in  	varchar(100),
+	description varchar(250)
 
+);
