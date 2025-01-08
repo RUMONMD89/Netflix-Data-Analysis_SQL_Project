@@ -37,3 +37,29 @@ CREATE TABLE Netflix
 	description varchar(250)
 
 );
+
+```
+# 課題:
+
+Q1)Count the number of movies and TV shows.
+```sql
+select 
+ type ,count(*) as total_content
+from netflix
+group by type;
+
+```
+Q2) count the number of movies and TV shows per country and identify the countries with the most content.
+
+```sql
+SELECT 
+    country, 
+	count(*) as total_count
+from netflix
+where 
+	country is not null and country !='' 
+group by 
+	country
+order by 
+	total_count desc;
+```
