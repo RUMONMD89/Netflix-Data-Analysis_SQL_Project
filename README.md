@@ -49,17 +49,20 @@ from netflix
 group by type;
 
 ```
-Q2) Count the number of movies and TV shows per country and identify the countries with the most content.
+Q2) Calculate the total number of movies and TV shows for each country, and also provide separate counts for movies and TV shows per country.
 
 ```sql
 SELECT 
-    country, 
-	count(*) as total_count
-from netflix
-where 
-	country is not null and country !='' 
-group by 
-	country
-order by 
-	total_count desc;
+    country,
+	COUNT(*)as total_Count,
+    COUNT(CASE WHEN type = 'Movie' THEN 1 END) AS movie_count,
+    COUNT(CASE WHEN type = 'TV Show' THEN 1 END) AS tv_show_count
+FROM 
+    Netflix
+WHERE 
+    country IS NOT NULL AND country != ''
+GROUP BY 
+    country
+ORDER BY 
+    movie_count DESC, tv_show_count DESC;
 ```
