@@ -68,3 +68,4 @@ GROUP BY
 ORDER BY 
     movie_count DESC, tv_show_count DESC;
 ```
+Objective: Analyze Netflix's content distribution by counting total movies and TV shows in each country, plus counts for each type.
