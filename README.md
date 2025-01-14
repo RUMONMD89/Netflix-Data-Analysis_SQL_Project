@@ -49,6 +49,8 @@ from netflix
 group by type;
 
 ```
+Objective: Examine the count and ratio of movies to TV shows on Netflix.
+
 Q2) Calculate the total number of movies and TV shows for each country, and also provide separate counts for movies and TV shows per country.
 
 ```sql
