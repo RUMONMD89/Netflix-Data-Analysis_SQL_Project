@@ -70,7 +70,7 @@ ORDER BY
 ```
 Objective: Analyze Netflix's content distribution by counting total movies and TV shows in each country.
 
-Q3) Find the the most common ratings for both movies and TV shows.
+Q3) Find the most common ratings for both movies and TV shows.
 ```sql
 SELECT 
     rating,
