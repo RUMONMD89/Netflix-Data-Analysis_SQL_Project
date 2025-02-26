@@ -71,3 +71,19 @@ ORDER BY
 Objective: Analyze Netflix's content distribution by counting total movies and TV shows in each country.
 
 Q3) Find the the most common ratings for both movies and TV shows.
+```sql
+SELECT 
+    rating,
+    COUNT(CASE WHEN type = 'Movie' THEN 1 END) AS movie_count,
+    COUNT(CASE WHEN type = 'TV Show' THEN 1 END) AS tv_show_count,
+    COUNT(*) AS total_count
+FROM 
+    Netflix
+WHERE 
+    rating IS NOT NULL AND rating != ''
+GROUP BY 
+    rating
+ORDER BY 
+    total_count DESC
+```
+
