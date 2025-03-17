@@ -86,4 +86,12 @@ GROUP BY
 ORDER BY 
     total_count DESC
 ```
-
+Q4)What are the top 10 most frequently listed genres (categories) for movies and TV shows?
+```sql
+SELECT 
+    listed_in, COUNT(*) AS genre_count
+FROM Netflix
+GROUP BY listed_in
+ORDER BY genre_count DESC
+LIMIT 10;
+```
