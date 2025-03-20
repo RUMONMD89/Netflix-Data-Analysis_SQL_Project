@@ -95,3 +95,16 @@ GROUP BY listed_in
 ORDER BY genre_count DESC
 LIMIT 10;
 ```
+Q5)What is the trend of movies and TV shows released over the years?
+```sql
+SELECT 
+    release_year, 
+    COUNT(CASE WHEN type = 'Movie' THEN 1 END) AS movie_count,
+    COUNT(CASE WHEN type = 'TV Show' THEN 1 END) AS tv_show_count
+FROM Netflix
+GROUP BY release_year
+ORDER BY release_year DESC;
+
+
+```
+
