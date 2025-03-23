@@ -102,9 +102,20 @@ SELECT
     COUNT(CASE WHEN type = 'Movie' THEN 1 END) AS movie_count,
     COUNT(CASE WHEN type = 'TV Show' THEN 1 END) AS tv_show_count
 FROM Netflix
+
 GROUP BY release_year
 ORDER BY release_year DESC;
 
+```
+Q6)Which year had the most content added to Netflix?
+```sql
+SELECT 
+    date_added, COUNT(*) AS content_count
+FROM Netflix
+WHERE date_added IS NOT NULL
+GROUP BY date_added
+ORDER BY content_count DESC
+LIMIT 10;
 
 ```
 
