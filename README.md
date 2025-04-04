@@ -118,4 +118,16 @@ ORDER BY content_count DESC
 LIMIT 10;
 
 ```
+Director & Cast Analysis
+Q7) Who are the top 10 directors with the most content on Netflix?
+
+```sql
+SELECT 
+    director, COUNT(*) AS total_content
+FROM Netflix
+WHERE director IS NOT NULL AND director != ''
+GROUP BY director
+ORDER BY total_content DESC
+LIMIT 10;
+```
 
